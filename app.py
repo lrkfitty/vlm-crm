@@ -86,32 +86,32 @@ section[data-testid="stSidebar"] { display: none; }
     background: var(--accent, #00ff88);
     box-shadow: 0 0 16px var(--accent, #00ff88);
 }
-.mc-icon { font-size: 1.4rem; margin-bottom: 10px; opacity: 0.6; }
+.mc-icon { font-size: 1.6rem; margin-bottom: 12px; opacity: 0.8; }
 .mc-label {
-    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em;
-    text-transform: uppercase; color: #2a2a4a; margin-bottom: 10px;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #6a6a9a; margin-bottom: 10px;
 }
 .mc-num {
-    font-size: 2.6rem; font-weight: 900; line-height: 1;
+    font-size: 3rem; font-weight: 900; line-height: 1;
     color: var(--accent, #ffffff);
     font-variant-numeric: tabular-nums;
 }
-.mc-sub { font-size: 0.72rem; color: #2a2a4a; margin-top: 8px; }
+.mc-sub { font-size: 0.82rem; color: #6a6a9a; margin-top: 8px; }
 .mc-pill {
-    display: inline-block; font-size: 0.65rem; font-weight: 700;
-    padding: 2px 8px; border-radius: 20px; margin-top: 8px;
+    display: inline-block; font-size: 0.72rem; font-weight: 700;
+    padding: 3px 10px; border-radius: 20px; margin-top: 8px;
     background: rgba(0,255,136,0.08); color: #00ff88;
     border: 1px solid rgba(0,255,136,0.15);
 }
 
 /* ── SECTION HEADERS ── */
 .sec {
-    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em;
-    text-transform: uppercase; color: #2a2a4a;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #7a7aaa;
     display: flex; align-items: center; gap: 12px;
     margin-bottom: 16px;
 }
-.sec::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.03); }
+.sec::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.06); }
 
 /* ── CHART CONTAINERS ── */
 .chart-card {
@@ -125,16 +125,16 @@ section[data-testid="stSidebar"] { display: none; }
 
 /* ── VERTICAL BARS ── */
 .vb-row { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
-.vb-label { font-size: 0.8rem; color: #5a5a7a; width: 150px; flex-shrink: 0; }
-.vb-bg { flex: 1; height: 5px; background: rgba(255,255,255,0.04); border-radius: 3px; overflow: hidden; }
+.vb-label { font-size: 0.88rem; color: #9a9abf; width: 160px; flex-shrink: 0; }
+.vb-bg { flex: 1; height: 6px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; }
 .vb-fill {
     height: 100%; border-radius: 3px;
     background: var(--c, #00ff88);
     box-shadow: 0 0 8px var(--c, #00ff88);
     transition: width 1s ease;
 }
-.vb-pct { font-size: 0.75rem; font-weight: 700; color: var(--c, #00ff88); width: 38px; text-align: right; }
-.vb-ct  { font-size: 0.72rem; color: #2a2a4a; width: 22px; text-align: right; }
+.vb-pct { font-size: 0.82rem; font-weight: 700; color: var(--c, #00ff88); width: 42px; text-align: right; }
+.vb-ct  { font-size: 0.8rem; color: #5a5a8a; width: 26px; text-align: right; }
 
 /* ── NEXT ACTION CARDS ── */
 .na-card {
@@ -143,8 +143,8 @@ section[data-testid="stSidebar"] { display: none; }
     display: flex; align-items: center; gap: 14px;
 }
 .na-icon { font-size: 1.1rem; flex-shrink: 0; }
-.na-title { font-size: 0.82rem; font-weight: 700; color: #c0c0e0; }
-.na-sub   { font-size: 0.72rem; color: #3a3a5a; margin-top: 2px; }
+.na-title { font-size: 0.9rem; font-weight: 700; color: #d8d8ff; }
+.na-sub   { font-size: 0.8rem; color: #7a7aaa; margin-top: 3px; }
 .na-badge {
     margin-left: auto; flex-shrink: 0;
     font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em;
@@ -181,10 +181,10 @@ section[data-testid="stSidebar"] { display: none; }
     box-shadow: 0 0 12px rgba(255,215,0,0.2);
     animation: pulse-dot 2s infinite;
 }
-.drip-label { font-size: 0.65rem; color: #3a3a5a; }
+.drip-label { font-size: 0.72rem; color: #6a6a9a; }
 .drip-label.sent  { color: #00ff88; }
 .drip-label.next  { color: #ffd700; }
-.drip-day { font-size: 0.6rem; color: #2a2a3a; margin-top: 2px; }
+.drip-day { font-size: 0.68rem; color: #5a5a7a; margin-top: 3px; }
 
 /* ── STREAMLIT OVERRIDES ── */
 .stTextInput > div > input {
@@ -351,13 +351,13 @@ with cc1:
         textinfo="value+percent initial",
         marker=dict(color=funnel_colors, line=dict(width=0)),
         connector=dict(line=dict(color="rgba(255,255,255,0.04)", width=1)),
-        textfont=dict(color="white", size=13),
+        textfont=dict(color="white", size=14),
     ))
     fig_funnel.update_layout(
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-        font_color="rgba(255,255,255,0.5)", height=280,
+        font_color="rgba(255,255,255,0.7)", height=280,
         margin=dict(t=10, b=10, l=10, r=10),
-        yaxis=dict(tickfont=dict(color="rgba(255,255,255,0.3)", size=11)),
+        yaxis=dict(tickfont=dict(color="rgba(255,255,255,0.6)", size=13)),
     )
     st.plotly_chart(fig_funnel, use_container_width=True, config={"displayModeBar": False})
 
@@ -374,15 +374,15 @@ with cc2:
             name=label.split("<br>")[0],
             showlegend=False,
             text=[str(val)], textposition="outside",
-            textfont=dict(color=color, size=12),
+            textfont=dict(color=color, size=13),
         ))
     fig_drip.update_layout(
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-        font_color="rgba(255,255,255,0.4)", height=280,
+        font_color="rgba(255,255,255,0.7)", height=280,
         margin=dict(t=10, b=10, l=10, r=60),
-        xaxis=dict(range=[0, max(total+5, 10)], tickfont=dict(color="rgba(255,255,255,0.15)", size=10),
-                   gridcolor="rgba(255,255,255,0.03)", zeroline=False),
-        yaxis=dict(tickfont=dict(color="rgba(255,255,255,0.35)", size=10), gridcolor="rgba(0,0,0,0)"),
+        xaxis=dict(range=[0, max(total+5, 10)], tickfont=dict(color="rgba(255,255,255,0.4)", size=11),
+                   gridcolor="rgba(255,255,255,0.05)", zeroline=False),
+        yaxis=dict(tickfont=dict(color="rgba(255,255,255,0.6)", size=11), gridcolor="rgba(0,0,0,0)"),
         barmode="overlay", bargap=0.3,
     )
     st.plotly_chart(fig_drip, use_container_width=True, config={"displayModeBar": False})
@@ -401,12 +401,12 @@ for col, title, val, color, sub in gauges:
         fig_g = go.Figure(go.Indicator(
             mode="gauge+number",
             value=val,
-            number={"suffix": "%", "font": {"color": color, "size": 42, "family": "Inter"}},
-            title={"text": f"<b>{title}</b><br><span style='font-size:0.7em;color:#3a3a5a'>{sub}</span>",
-                   "font": {"color": "rgba(255,255,255,0.5)", "size": 12}},
+            number={"suffix": "%", "font": {"color": color, "size": 48, "family": "Inter"}},
+            title={"text": f"<b>{title}</b><br><span style='font-size:0.85em;color:#9a9abf'>{sub}</span>",
+                   "font": {"color": "rgba(255,255,255,0.85)", "size": 14}},
             gauge={
-                "axis": {"range": [0, 100], "tickcolor": "rgba(255,255,255,0.08)",
-                         "tickfont": {"color": "rgba(255,255,255,0.15)", "size": 8},
+                "axis": {"range": [0, 100], "tickcolor": "rgba(255,255,255,0.15)",
+                         "tickfont": {"color": "rgba(255,255,255,0.4)", "size": 10},
                          "nticks": 5},
                 "bar":  {"color": color, "thickness": 0.25},
                 "bgcolor": "rgba(0,0,0,0)",
