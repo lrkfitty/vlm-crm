@@ -29,10 +29,7 @@ def _valid_token(token, u):
     now = int(time.time() // SESSION_TTL)
     return token in (_hash(u + CRM_PASS + str(now)), _hash(u + CRM_PASS + str(now - 1)))
 
-@st.cache_resource
-def _cookie_mgr():
-    import extra_streamlit_components as stx
-    return stx.CookieManager()
+import extra_streamlit_components as stx
 
 st.set_page_config(page_title="VLM Command Center", page_icon="⚡", layout="wide", initial_sidebar_state="collapsed")
 
@@ -240,7 +237,7 @@ h1,h2,h3 { color: #ffffff !important; }
 """, unsafe_allow_html=True)
 
 # ── LOGIN ───────────────────────────────────────────────────────────────────
-cookies = _cookie_mgr()
+cookies = stx.CookieManager()
 
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
