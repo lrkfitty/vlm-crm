@@ -1,7 +1,7 @@
 import streamlit as st
-import os, sys, hashlib, io, json
+import os, sys, hashlib, io, json, time
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent / ".env")
 try:
@@ -19,9 +19,20 @@ LEADS_LOCAL = Path(__file__).parent / "leads_local.json"
 STAGES      = ["New", "Contacted", "Demo Booked", "Closed Won", "Closed Lost"]
 CRM_USER    = os.getenv("CRM_USERNAME", "admin")
 CRM_PASS    = os.getenv("CRM_PASSWORD", "admin")
+SESSION_TTL = 86400  # 24 hours in seconds
 
 def _hash(s): return hashlib.sha256(s.encode()).hexdigest()
 def _check(u, p): return u == CRM_USER and _hash(p) == _hash(CRM_PASS)
+def _make_token(u): return _hash(u + CRM_PASS + str(int(time.time() // SESSION_TTL)))
+def _valid_token(token, u):
+    # Accept tokens from current and previous 24h window
+    now = int(time.time() // SESSION_TTL)
+    return token in (_hash(u + CRM_PASS + str(now)), _hash(u + CRM_PASS + str(now - 1)))
+
+@st.cache_resource
+def _cookie_mgr():
+    import extra_streamlit_components as stx
+    return stx.CookieManager()
 
 st.set_page_config(page_title="VLM Command Center", page_icon="⚡", layout="wide", initial_sidebar_state="collapsed")
 
@@ -229,7 +240,18 @@ h1,h2,h3 { color: #ffffff !important; }
 """, unsafe_allow_html=True)
 
 # ── LOGIN ───────────────────────────────────────────────────────────────────
-if "authenticated" not in st.session_state: st.session_state.authenticated = False
+cookies = _cookie_mgr()
+
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+# Auto-login from cookie
+if not st.session_state.authenticated:
+    saved_token = cookies.get("vlm_session")
+    saved_user  = cookies.get("vlm_user") or CRM_USER
+    if saved_token and _valid_token(saved_token, saved_user):
+        st.session_state.authenticated = True
+        st.session_state.staff_user    = saved_user
 
 if not st.session_state.authenticated:
     st.markdown('<div class="login-card"><div class="login-logo">⚡ Viral Lense Media</div><div class="login-title">Command Center</div><div class="login-sub">Staff access only</div></div>', unsafe_allow_html=True)
@@ -240,8 +262,12 @@ if not st.session_state.authenticated:
             p = st.text_input("Password", type="password")
             if st.form_submit_button("Sign In →", use_container_width=True):
                 if _check(u, p):
+                    token = _make_token(u)
+                    expires = datetime.now() + timedelta(hours=24)
+                    cookies.set("vlm_session", token,   expires_at=expires)
+                    cookies.set("vlm_user",    u,        expires_at=expires)
                     st.session_state.authenticated = True
-                    st.session_state.staff_user = u
+                    st.session_state.staff_user    = u
                     st.rerun()
                 else:
                     st.error("Incorrect credentials.")
@@ -309,7 +335,10 @@ with hc2:
 with hc3:
     st.markdown('<div class="btn-ghost">', unsafe_allow_html=True)
     if st.button("Sign Out", use_container_width=True):
-        st.session_state.authenticated = False; st.rerun()
+        cookies.delete("vlm_session")
+        cookies.delete("vlm_user")
+        st.session_state.authenticated = False
+        st.rerun()
     st.markdown('</div>', unsafe_allow_html=True)
     if st.button("↻ Refresh", use_container_width=True):
         st.cache_data.clear(); st.rerun()
