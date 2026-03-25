@@ -1,5 +1,5 @@
 import streamlit as st
-import os, sys, hashlib, io
+import os, sys, hashlib, io, json
 from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent / ".env")
@@ -13,6 +13,8 @@ except Exception:
 import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from utils.sheets import get_all_leads, update_lead
+
+LEADS_LOCAL = Path(__file__).parent / "leads_local.json"
 
 st.set_page_config(page_title="VLM — CRM", page_icon="✦", layout="wide")
 
@@ -273,3 +275,69 @@ for i, stage in enumerate(STAGES):
     ct = len(df[df["status"]==stage])
     with cols[i]:
         st.markdown(f'<div class="metric-card"><div class="metric-num">{ct}</div><div class="metric-label">{stage}</div></div>', unsafe_allow_html=True)
+
+st.markdown('<hr class="divider">', unsafe_allow_html=True)
+
+# ─── OUTREACH PIPELINE ────────────────────────────────────────────────────────
+st.markdown('<div class="section-label">Outreach Pipeline</div>', unsafe_allow_html=True)
+
+if LEADS_LOCAL.exists():
+    with open(LEADS_LOCAL) as _f:
+        _ol = json.load(_f)
+    odf = pd.DataFrame(_ol)
+
+    _contacted = int((odf.get("emails_sent", pd.Series(dtype=int)) > 0).sum()) if "emails_sent" in odf.columns else 0
+    _replied   = int(odf["replied"].sum())   if "replied"   in odf.columns else 0
+    _booked    = int(odf["booked"].sum())    if "booked"    in odf.columns else 0
+    _e1 = int((odf.get("emails_sent", pd.Series(dtype=int)) >= 1).sum()) if "emails_sent" in odf.columns else 0
+    _e2 = int((odf.get("emails_sent", pd.Series(dtype=int)) >= 2).sum()) if "emails_sent" in odf.columns else 0
+    _e3 = int((odf.get("emails_sent", pd.Series(dtype=int)) >= 3).sum()) if "emails_sent" in odf.columns else 0
+    _e4 = int((odf.get("emails_sent", pd.Series(dtype=int)) >= 4).sum()) if "emails_sent" in odf.columns else 0
+
+    oc1, oc2, oc3, oc4, oc5, oc6, oc7 = st.columns(7)
+    for _col, _num, _label, _cls in [
+        (oc1, _contacted, "Contacted",       "metric-b2b"),
+        (oc2, _e1,        "Email 1 Sent",    ""),
+        (oc3, _e2,        "Email 2 Sent",    ""),
+        (oc4, _e3,        "Email 3 (CTA)",   ""),
+        (oc5, _e4,        "Seq Complete",    ""),
+        (oc6, _replied,   "Replied",         "metric-new"),
+        (oc7, _booked,    "Booked",          "metric-won"),
+    ]:
+        with _col:
+            st.markdown(f'<div class="metric-card {_cls}"><div class="metric-num">{_num}</div><div class="metric-label">{_label}</div></div>', unsafe_allow_html=True)
+
+    st.markdown("&nbsp;")
+
+    # Next drip dates
+    st.markdown("""
+<p style='color:#334155;font-size:0.82rem;'>
+  <b style='color:#475569'>Next drip:</b>
+  &nbsp; Email 2 (Arrival) — 2026-03-29 3:00 AM BKK
+  &nbsp;·&nbsp; Email 3 (Setup CTA) — 2026-04-02
+  &nbsp;·&nbsp; Email 4 (Breakup) — 2026-04-05
+</p>
+""", unsafe_allow_html=True)
+
+    # Outreach table
+    st.markdown("&nbsp;")
+    st.markdown('<div class="section-label">Lead Outreach Detail</div>', unsafe_allow_html=True)
+    _show = ["name","email","company","vertical","emails_sent","last_sent_at","replied","booked","status"]
+    _avail = [c for c in _show if c in odf.columns]
+    st.dataframe(
+        odf[_avail].sort_values("emails_sent", ascending=False).reset_index(drop=True),
+        use_container_width=True, height=320,
+        column_config={
+            "name":         st.column_config.TextColumn("Name",        width="medium"),
+            "email":        st.column_config.TextColumn("Email",       width="large"),
+            "company":      st.column_config.TextColumn("Company",     width="medium"),
+            "vertical":     st.column_config.TextColumn("Vertical",    width="medium"),
+            "emails_sent":  st.column_config.NumberColumn("Emails Sent", width="small"),
+            "last_sent_at": st.column_config.TextColumn("Last Sent",   width="medium"),
+            "replied":      st.column_config.CheckboxColumn("Replied", width="small"),
+            "booked":       st.column_config.CheckboxColumn("Booked",  width="small"),
+            "status":       st.column_config.TextColumn("Status",      width="medium"),
+        }
+    )
+else:
+    st.info("leads_local.json not found — run the outreach sync script to populate this section.")

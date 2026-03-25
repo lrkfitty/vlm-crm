@@ -16,7 +16,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135762",
@@ -35,7 +40,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135781",
@@ -54,7 +64,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135795",
@@ -73,7 +88,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135810",
@@ -92,7 +112,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135822",
@@ -111,7 +136,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135834",
@@ -130,7 +160,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135846",
@@ -149,7 +184,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135864",
@@ -168,7 +208,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135878",
@@ -187,7 +232,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-AD_-20260326022251135895",
@@ -206,7 +256,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "ad_agency"
   },
   {
     "id": "VP-FIN-20260326022251136075",
@@ -225,7 +280,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136088",
@@ -244,7 +304,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136100",
@@ -263,7 +328,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136112",
@@ -282,7 +352,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136123",
@@ -301,7 +376,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136134",
@@ -320,7 +400,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136147",
@@ -339,7 +424,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136158",
@@ -358,7 +448,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136170",
@@ -377,7 +472,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136189",
@@ -396,7 +496,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136202",
@@ -415,7 +520,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136215",
@@ -434,7 +544,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136228",
@@ -453,7 +568,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136240",
@@ -472,7 +592,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136253",
@@ -491,7 +616,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136267",
@@ -510,7 +640,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136280",
@@ -529,7 +664,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136293",
@@ -548,7 +688,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136305",
@@ -567,7 +712,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-FIN-20260326022251136461",
@@ -586,7 +736,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "financial_advisor"
   },
   {
     "id": "VP-COA-20260326022251136653",
@@ -605,7 +760,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136665",
@@ -624,7 +784,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136677",
@@ -643,7 +808,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136689",
@@ -662,7 +832,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136701",
@@ -681,7 +856,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136714",
@@ -700,7 +880,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136726",
@@ -719,7 +904,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136738",
@@ -738,7 +928,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136749",
@@ -757,7 +952,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136764",
@@ -776,7 +976,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136775",
@@ -795,7 +1000,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136786",
@@ -814,7 +1024,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136797",
@@ -833,7 +1048,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136808",
@@ -852,7 +1072,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136819",
@@ -871,7 +1096,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136831",
@@ -890,7 +1120,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136841",
@@ -909,7 +1144,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136852",
@@ -928,7 +1168,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136864",
@@ -947,7 +1192,12 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 1,
+    "last_sent_at": "2026-03-26T03:00:00",
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   },
   {
     "id": "VP-COA-20260326022251136874",
@@ -966,6 +1216,11 @@
     "how_heard": "",
     "status": "New",
     "notes": "",
-    "drip_day": "0"
+    "drip_day": 0,
+    "emails_sent": 0,
+    "last_sent_at": null,
+    "replied": false,
+    "booked": false,
+    "vertical": "coach_consultant"
   }
 ]
